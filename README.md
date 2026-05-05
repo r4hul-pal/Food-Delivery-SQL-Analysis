@@ -42,6 +42,7 @@ The goal is to simulate real-world business analysis using SQL.
 - Data Segmentation
 
 ## 💡 Sample Query
+<img width="640" height="194" alt="image" src="https://github.com/user-attachments/assets/abb94db0-1d2e-47f1-808b-5a79521e75e8" />
 
 ```sql
 SELECT 
@@ -56,5 +57,5 @@ ORDER BY revenue DESC;
 - Rain increases order volume
 - Fast delivery leads to better ratings
 
-<img width="640" height="194" alt="image" src="https://github.com/user-attachments/assets/abb94db0-1d2e-47f1-808b-5a79521e75e8" />
+
 
