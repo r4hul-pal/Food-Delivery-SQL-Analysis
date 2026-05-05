@@ -1,31 +1,60 @@
-# 🍔 Food Delivery Data Analysis (SQL Project)
+# 🍔 Food Delivery Data Analysis using SQL
 
-## 📌 Objective
-Analyze customer behavior, revenue patterns, and delivery insights.
+## 📌 Project Overview
+This project analyzes a food delivery dataset (50,000+ records) to uncover customer behavior, revenue patterns, and business insights.
 
-## 📊 Dataset
-- 50,000 rows
-- 19 columns
-- Features: city, cuisine, mood, weather, rating, etc.
+The goal is to simulate real-world business analysis using SQL.
+
+## 📊 Dataset Details
+- Total Records: 50,000+
+- Columns: 19
+- Features include:
+  - City, Cuisine, Meal Type
+  - Order Value, Delivery Fee
+  - Mood, Hunger Level
+  - Weather Conditions
+  - Customer Type (Repeat/New)
+
+## ❓ Business Questions Solved
+
+1. Which city generates the highest revenue?
+2. Which cuisine is most profitable?
+3. Do repeat customers spend more?
+4. Does rainy weather increase orders?
+5. How delivery time affects ratings?
+6. What is the peak ordering time?
+7. Do mood and hunger affect spending?
 
 ## 🔍 Key Insights
 
-1. 💰 Total Revenue Generated
-2. 🌆 Top Performing Cities
-3. 🍜 Most Profitable Cuisine
-4. 👥 Repeat vs New Customer Behavior
-5. 🌧 Rain Impact on Orders
-6. ⏱ Delivery Time vs Rating
-7. 🧠 Mood-based Ordering Behavior
+- 💰 Repeat customers contribute significantly higher revenue
+- 🌧 Orders increase during rainy weather
+- ⏱ Faster delivery leads to better ratings
+- 🍜 Certain cuisines dominate in specific cities
+- 🧠 Customers with high hunger levels spend more
 
-## 🛠 SQL Concepts Used
-- GROUP BY
+## 🛠 SQL Skills Used
+
+- GROUP BY & Aggregations
 - CASE WHEN
-- WINDOW FUNCTIONS
-- CTE (WITH)
-- RANK()
+- Window Functions (RANK, OVER)
+- CTE (WITH clause)
+- Data Segmentation
+
+## 💡 Sample Query
+
+```sql
+SELECT 
+    city,
+    SUM(order_value) AS revenue
+FROM food_ordering_behaviour
+GROUP BY city
+ORDER BY revenue DESC;
 
 ## 📈 Conclusion
 - Repeat customers generate higher revenue
 - Rain increases order volume
 - Fast delivery leads to better ratings
+
+<img width="640" height="194" alt="image" src="https://github.com/user-attachments/assets/abb94db0-1d2e-47f1-808b-5a79521e75e8" />
+
